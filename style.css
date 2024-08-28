@@ -1,7 +1,16 @@
+:root{
+    --azul-dnc: #0C70F2;
+    --preto-dnc: #303030;
+    --cinza-hover: #C9C9C9;
+    --fonte-padrao: "Inter";
+}
+
 body{
     margin: 0px;
     padding: 0px;
     font-family: Inter;
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+    background-repeat: no-repeat;
 }
 
 #principal{
@@ -58,6 +67,120 @@ body{
         transition-duration: 0.5s;
         cursor: pointer;
     }
+
+/* Sessão Principal do Site */
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+    header {
+        color: white;
+    }
+
+    header h1 {
+        font-size: 80px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: center;
+
+    }
+
+    header h2 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 100px;
+        line-height: 55px;
+        
+    }
+
+    header .invert {
+        background-color: black;
+        font-weight: bold;
+        padding: 2px;
+    }
+
+    /* Formulario */
+
+    form {
+        color: white;
+        font-family: Inter;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 36.31px;
+        width: 600px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    form input {
+        border-radius: 10px;
+        border: 0px;
+        height: 50px;
+        padding-left: 15px;
+        background: #FFFFFFE5;
+    }
+
+    form label {
+         margin: 10px 0px 10px 0px;
+    }
+
+    form input::placeholder{
+        color: #39393980;
+        font-size: 20px;
+    }
+
+    .checkbox-itens label {
+        font-size: 25px;
+
+    }
+
+    .checkbox-itens {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1.7);
+
+    }
+
+    button[type="submit"] {
+        width: 600px;
+        height: 56px;
+        gap: 0px;
+        border-radius: 10px;
+        opacity: 0px;
+        border: 0px;
+        background-color: #0C70F2E5;
+        box-shadow: 0px 6px 4px 0px #0C70F240;
+        margin-top: 60px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 35px;
+        color: white;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        transform: translateY(7px);
+        transition-duration: 0.5s;
+
+    }
+    
+
 
 
 
