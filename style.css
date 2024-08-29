@@ -326,7 +326,26 @@ footer {
         margin-left: 10px;
     }
 
+    /* ajustando footer */
 
+    footer .linha1 {
+        flex-direction: column;
+    }
+
+    footer .endereco {
+        width: 90%;
+        margin-bottom: 20px;
+        
+    }
+
+    footer .linha2 a {
+        font-size: 18px;
+        margin-top: 10px;    
+    }
+
+    footer .linha2 a:first-child {
+        border: 0px;
+    }
 }
 
 
